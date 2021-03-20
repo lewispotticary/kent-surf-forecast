@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css"><!--Main Style Sheet-->
+    <link rel="stylesheet" href="./leaflet/leaflet.css"><!--Leaflet (Javascript library for maps) Style Sheet-->
+    <title>Kent Surf Forecast</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container fluid">
+            <a href="index.html" class="navbar-brand me-5"><h3>Kent Surf Forecast</h3></a>
+         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav">
+                <div class="dropdown mb-0">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Surf Spots
+                      </a>
+                    <li class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a href="#" class="nav-link me-3">&nbsp;Joss Bay</a>
+                        <a href="#" class="nav-link me-3">&nbsp;Viking Bay</a>
+                        <a href="#" class="nav-link me-3">&nbsp;Stone Bay</a>
+                        <a href="#" class="nav-link me-3">&nbsp;Botany Bay</a>
+                    </li>
+                </div>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <div id="mapid"></div>
+
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script><!--Bootstrap Javascript-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script><!--Bootstrap Javascript-->
+    <script src="./leaflet/leaflet.js"></script><!--Leaflet (Javascript library for maps) Javascript-->
+    <script src="./js/map.js"></script><!--Main Leaflet (Javascript library for maps) Javascript Configuration File-->
+</body>
+</html>

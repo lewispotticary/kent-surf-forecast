@@ -1,0 +1,9 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+#mapid {
+  height: 500px;
+}
+
+.leaflet-popup-close-button {
+  display: none;
+}
