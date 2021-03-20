@@ -83,15 +83,19 @@ var mymap = L.map('mapid').setView([51.35613, 1.40256], 12.4);
 
         //Dungeness Bay Beach Marker
 
-        var dungeness = L.marker([50.9142, 0.9789]).addTo(mymap);
-        dungeness.bindPopup("Dungeness");
-        dungeness.on('mouseover', function (e) {
+        var dungeness = L.marker([50.9142, 0.9789],).addTo(mymap);
+        var mq = window.matchMedia( "(max-width: 768px)" );
+        if (mq.matches) {
+            dungeness.bindPopup("Dungeness").openPopup();
+        }
+        else {
+            dungeness.bindPopup("Dungeness");
+            dungeness.on('mouseover', function (e) {
             this.openPopup();
-        });
-        dungeness.on('mouseout', function (e) {
+            });
+            dungeness.on('mouseout', function (e) {
             this.closePopup();
-        });
+            });
+        }
 
-       
-
-
+            
