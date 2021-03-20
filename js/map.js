@@ -58,3 +58,40 @@ var mymap = L.map('mapid').setView([51.35613, 1.40256], 12.4);
         westernUndercliff.on('mouseout', function (e) {
             this.closePopup();
         });
+
+        //Herne Bay Beach Marker
+
+        var herneBay = L.marker([51.37297, 1.12366]).addTo(mymap);
+        herneBay.bindPopup("Herne Bay");
+        herneBay.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        herneBay.on('mouseout', function (e) {
+            this.closePopup();
+        });
+
+        //Folkstone Marker
+
+        var folkstone = L.marker([51.08133, 1.19151]).addTo(mymap);
+        folkstone.bindPopup("Folkstone");
+        folkstone.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        folkstone.on('mouseout', function (e) {
+            this.closePopup();
+        });
+
+        //Dungeness Bay Beach Marker
+
+        var dungeness = L.marker([50.9142, 0.9789]).addTo(mymap);
+        dungeness.bindPopup("Dungeness");
+        dungeness.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        dungeness.on('mouseout', function (e) {
+            this.closePopup();
+        });
+
+       
+
+
